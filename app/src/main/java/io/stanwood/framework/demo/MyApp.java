@@ -22,19 +22,19 @@
 
 package io.stanwood.framework.demo;
 
-import android.app.Activity;
 import android.app.Application;
 
 import javax.inject.Inject;
 
+import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasActivityInjector;
+import dagger.android.HasAndroidInjector;
 import io.stanwood.framework.demo.di.DaggerAppComponent;
 import io.stanwood.framework.dialog.RatingService;
 
-public class MyApp extends Application implements HasActivityInjector {
+public class MyApp extends Application implements HasAndroidInjector {
     @Inject
-    DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
+    DispatchingAndroidInjector<Object> dispatchingAndroidInjector;
 
     @Inject
     RatingService ratingService;
@@ -47,7 +47,7 @@ public class MyApp extends Application implements HasActivityInjector {
     }
 
     @Override
-    public DispatchingAndroidInjector<Activity> activityInjector() {
+    public AndroidInjector<Object> androidInjector() {
         return dispatchingAndroidInjector;
     }
 }
