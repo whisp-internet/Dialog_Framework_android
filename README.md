@@ -1,15 +1,15 @@
-[![Release](https://jitpack.io/v/stanwood/Dialog_Framework_android.svg?style=flat-square)](https://jitpack.io/#stanwood/Dialog_Framework_android)
+[![Release](https://jitpack.io/v/whisp-internet/Dialog_Framework_android.svg?style=flat-square)](https://jitpack.io/#whisp-internet/Dialog_Framework_android)
 [![API](https://img.shields.io/badge/API-21%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=21)
 
-# stanwood Rating Dialog (Android)
+# whisp-Internet Rating Dialog (Android)
 
-This library contains a simple to use "please rate my app" dialog, which is shown at x-th time of app starts.
+This library contains a simple to use "please rate my app" dialog, which is shown at x-th time of app starts. Based on [stanwood Rating Dialog](https://github.com/stanwood/Dialog_Framework_android).
 
 ![Demo](images/dialog_screenshot.png)
 
 ## Import
 
-The stanwood Rating Dialog is hosted on JitPack. Therefore you can simply import it by adding
+The whisp Internet Rating Dialog is hosted on JitPack. Therefore you can simply import it by adding
 
 ```groovy
 allprojects {
@@ -26,12 +26,9 @@ Then add this to you app's `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.stanwood:Dialog_Framework_android:<insert latest version here>'
+    implementation 'com.github.whisp-internet:Dialog_Framework_android:<insert latest version here>'
 }
 ```
-
-For more info about how to add Stanwood analytics framework to the app please check the 
-https://github.com/stanwood/Analytics_Framework_android
 
 ## Usage
 
