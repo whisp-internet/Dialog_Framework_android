@@ -53,7 +53,7 @@ ext {
     targetSdkVersion = 29
     compileSdkVersion = 29
     materialVersion = '1.2.1'
-    glideVersion = "4.9.0"
+    glideVersion = "4.11.0"
     dagger_version = '2.30'
     analytics_framework_version = '1.8.1'
     core_framework_version = '0.4'
